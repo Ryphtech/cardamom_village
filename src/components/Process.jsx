@@ -23,11 +23,11 @@ export default function Process() {
     ];
 
     return (
-        <section className="px-4 lg:px-40 py-24 bg-background-light dark:bg-background-dark overflow-hidden" id="process">
+        <section className="px-4 lg:px-40 py-12 lg:py-24 bg-background-light dark:bg-background-dark overflow-hidden" id="process">
             <div className="max-w-[1200px] mx-auto">
                 <div className="text-center mb-16 space-y-4">
                     <span className="text-primary font-bold text-sm tracking-widest uppercase">The Essence</span>
-                    <h2 className="text-4xl lg:text-5xl font-black">Our Journey to You</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black">Our Journey to You</h2>
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-lg">
                         Every spice has a story. Here is how we ensure the purest flavor reaches your kitchen.
                     </p>

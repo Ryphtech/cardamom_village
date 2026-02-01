@@ -3,11 +3,11 @@ export default function Hero() {
         <section className="px-4 lg:px-40 py-8">
             <div className="max-w-[1200px] mx-auto">
                 <div
-                    className="relative overflow-hidden rounded-xl h-[560px] flex flex-col justify-end p-8 lg:p-16 bg-cover bg-center"
+                    className="relative overflow-hidden rounded-xl h-[560px] flex flex-col justify-end p-6 md:p-10 lg:p-16 bg-cover bg-center"
                     style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1-z7X_eNKQIo417PPDSVZxjyH9lQZpWpvzVbKRhuIpVHPdWbY7Qlo089V7hxLRtnwOMfIhNkxwwT02mzQBzEzHyVsomag8Ng2IQlqvxCvk6x3Js3RVKDKMz4QQtwDgMIgqaW9oCdRY_uYpj4fgx5jrO55o7RwCVhqhuh2SPQjYJnQLJbudqOz6PxrXDg2fJTxfB2TG4c8iGrD6zXEwgvhou5BbsFiEea5QBIU5aeRKJioxW6jYJ1dNTYAlYCA4JjV1NCwL63zgkzO")' }}
                 >
                     <div className="max-w-2xl space-y-6">
-                        <h1 className="text-white text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
                             Pure Essence of Idukki. <br />Handpicked for Perfection.
                         </h1>
                         <p className="text-white/90 text-lg font-normal leading-relaxed">

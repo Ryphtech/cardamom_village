@@ -1,6 +1,6 @@
 export default function Products() {
     return (
-        <section className="px-4 lg:px-40 py-20 bg-white dark:bg-[#0c1a0e]" id="shop">
+        <section className="px-4 lg:px-40 py-12 lg:py-20 bg-white dark:bg-[#0c1a0e]" id="shop">
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-between items-end mb-12">
                     <div className="space-y-4">

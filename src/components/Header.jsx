@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f0f4f0] dark:border-[#1e3a20] px-6 lg:px-40 py-3">
+        <header className="sticky top-0 z-50 w-full bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f0f4f0] dark:border-[#1e3a20] px-4 lg:px-40 py-3">
             <div className="max-w-[1200px] mx-auto flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div className="text-primary">

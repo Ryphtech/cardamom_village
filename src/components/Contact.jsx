@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
-        <section className="px-4 lg:px-40 py-24 bg-background-light dark:bg-background-dark" id="contact">
-            <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-start">
+        <section className="px-4 lg:px-40 py-12 lg:py-24 bg-background-light dark:bg-background-dark" id="contact">
+            <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
                 <div className="space-y-8">
                     <h2 className="text-4xl lg:text-5xl font-black">Wholesale & Export Inquiries</h2>
                     <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
@@ -37,7 +37,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-white dark:bg-[#0c1a0e] p-10 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800">
+                <div className="bg-white dark:bg-[#0c1a0e] p-6 lg:p-10 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800">
                     <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
