@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Ryphtech.github.io/cardamom_village/",
+  "homepage": "https://cardamom-village-2xo9.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

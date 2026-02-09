@@ -4,7 +4,7 @@ import cofounder from '../assets/images/cofounder.jpeg';
 
 export default function Founders() {
     return (
-        <section className="px-4 lg:px-40 py-12 bg-white dark:bg-zinc-900/50">
+        <section className="px-4 lg:px-40 py-12 bg-white dark:bg-zinc-900/50" id="founders">
             <div className="max-w-[1200px] mx-auto text-center space-y-12">
                 <div className="space-y-4">
                     <div className="inline-block px-4 py-1 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest">Our Roots</div>

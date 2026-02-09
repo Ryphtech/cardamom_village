@@ -12,7 +12,7 @@ const otherSpices = [
 
 export default function OtherSpices() {
     return (
-        <section className="px-4 lg:px-40 py-12 lg:py-20 bg-gray-50 dark:bg-zinc-900/30">
+        <section className="px-4 lg:px-40 py-12 lg:py-20 bg-gray-50 dark:bg-zinc-900/30" id="gourmet">
             <div className="max-w-[1200px] mx-auto">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl font-black">Gourmet Spice Collection</h2>

@@ -20,7 +20,7 @@ export default function FarmStories() {
     }, []);
 
     return (
-        <section className="py-12 lg:py-20 bg-background-light dark:bg-background-dark overflow-hidden">
+        <section className="py-12 lg:py-20 bg-background-light dark:bg-background-dark overflow-hidden" id="stories">
             <div className="max-w-[1200px] mx-auto px-4 lg:px-40 mb-10 text-center">
                 <h2 className="text-4xl font-black">Our Farm Stories</h2>
                 <p className="text-gray-500 mt-4 max-w-md mx-auto">Glimpses into the life and lush fields of Cardamom Village.</p>

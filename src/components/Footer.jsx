@@ -51,19 +51,19 @@ export default function Footer() {
                 <div>
                     <h4 className="font-bold mb-6">Quick Links</h4>
                     <ul className="space-y-4 text-sm text-gray-400">
-                        <li><a className="hover:text-primary transition-colors" href="#about">About Story</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#process">Our Farms</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#shop">Product Grades</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#process">Sustainability</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#about">Our Heritage</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#shop">Signature Collection</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#gourmet">Gourmet Selection</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#stories">Farm Stories</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 className="font-bold mb-6">Support</h4>
+                    <h4 className="font-bold mb-6">Explore</h4>
                     <ul className="space-y-4 text-sm text-gray-400">
-                        <li><a className="hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#">Returns & Refunds</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-                        <li><a className="hover:text-primary transition-colors" href="#contact">Contact Support</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#contact">Wholesale & Export</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#process">The Process</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#founders">Founders' Story</a></li>
+                        <li><a className="hover:text-primary transition-colors" href="#process">Our Sustainablity</a></li>
                     </ul>
                 </div>
             </div>
