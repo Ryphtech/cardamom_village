@@ -31,11 +31,11 @@ export default function Founders() {
                         <div className="w-1/2 md:w-1/3 aspect-[4/5] relative group overflow-hidden rounded-2xl shadow-xl border border-primary/10">
                             <img
                                 src={founder2}
-                                alt="Amal Prakash A"
+                                alt="Amal Prakash"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent text-white text-left flex flex-col items-start">
-                                <p className="font-black text-sm md:text-xl">Amal Prakash A</p>
+                                <p className="font-black text-sm md:text-xl">Amal Prakash</p>
                                 <span className="mt-1 px-2 py-0.5 bg-primary/80 text-[#111812] font-black text-[8px] uppercase tracking-wider rounded-full shadow-sm">Founder</span>
                             </div>
                         </div>
