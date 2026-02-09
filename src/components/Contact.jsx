@@ -1,4 +1,29 @@
+import { useState } from 'react';
+
 export default function Contact() {
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        subject: 'Bulk Purchase Inquiry',
+        message: ''
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { fullName, email, subject, message } = formData;
+        const whatsappMessage = `*Wholesale & Export Inquiry from Website*\n\n*Name:* ${fullName}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`;
+        const whatsappUrl = `https://wa.me/917736733056?text=${encodeURIComponent(whatsappMessage)}`;
+        window.open(whatsappUrl, '_blank');
+    };
+
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [id]: value
+        }));
+    };
+
     return (
         <section className="px-4 lg:px-40 py-12 lg:py-24 bg-background-light dark:bg-background-dark" id="contact">
             <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
@@ -14,7 +39,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Email Us</p>
-                                <p className="font-bold">hello@cardamomvillage.com</p>
+                                <p className="font-bold">cardamomvillageinfo@gmail.com</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
@@ -23,7 +48,7 @@ export default function Contact() {
                             </div>
                             <div>
                                 <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Call Us</p>
-                                <p className="font-bold">+91 944 600 0000</p>
+                                <p className="font-bold">+91 77367 33056</p>
                             </div>
                         </div>
                         <div className="flex items-center gap-4">
@@ -32,26 +57,47 @@ export default function Contact() {
                             </div>
                             <div>
                                 <p className="text-xs text-gray-500 uppercase font-bold tracking-widest">Our Location</p>
-                                <p className="font-bold">Idukki, Kerala, India</p>
+                                <p className="font-bold">Cardamom Village, Mukkudam PO, Idukki township, 685562</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="bg-white dark:bg-[#0c1a0e] p-6 lg:p-10 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800">
-                    <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                    <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-2 gap-4">
                             <div className="space-y-2">
-                                <label className="text-sm font-bold">Full Name</label>
-                                <input className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary" placeholder="John Doe" type="text" />
+                                <label className="text-sm font-bold" htmlFor="fullName">Full Name</label>
+                                <input
+                                    id="fullName"
+                                    className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary"
+                                    placeholder="John Doe"
+                                    type="text"
+                                    required
+                                    value={formData.fullName}
+                                    onChange={handleChange}
+                                />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm font-bold">Email</label>
-                                <input className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary" placeholder="john@example.com" type="email" />
+                                <label className="text-sm font-bold" htmlFor="email">Email</label>
+                                <input
+                                    id="email"
+                                    className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary"
+                                    placeholder="john@example.com"
+                                    type="email"
+                                    required
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                />
                             </div>
                         </div>
                         <div className="space-y-2">
-                            <label className="text-sm font-bold">Subject</label>
-                            <select className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary">
+                            <label className="text-sm font-bold" htmlFor="subject">Subject</label>
+                            <select
+                                id="subject"
+                                className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary"
+                                value={formData.subject}
+                                onChange={handleChange}
+                            >
                                 <option>Bulk Purchase Inquiry</option>
                                 <option>Export Request</option>
                                 <option>Product Samples</option>
@@ -59,10 +105,18 @@ export default function Contact() {
                             </select>
                         </div>
                         <div className="space-y-2">
-                            <label className="text-sm font-bold">Message</label>
-                            <textarea className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary" placeholder="Tell us about your requirements..." rows="4"></textarea>
+                            <label className="text-sm font-bold" htmlFor="message">Message</label>
+                            <textarea
+                                id="message"
+                                className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary"
+                                placeholder="Tell us about your requirements..."
+                                rows="4"
+                                required
+                                value={formData.message}
+                                onChange={handleChange}
+                            ></textarea>
                         </div>
-                        <button className="w-full bg-primary text-[#111812] py-4 rounded-lg font-black text-lg hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+                        <button type="submit" className="w-full bg-primary text-[#111812] py-4 rounded-lg font-black text-lg hover:brightness-110 transition-all shadow-lg shadow-primary/20">
                             Send Inquiry
                         </button>
                     </form>

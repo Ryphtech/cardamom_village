@@ -1,22 +1,27 @@
+import cultivation from '../assets/images/cultivation.avif';
+import harvest from '../assets/images/harvest.jpg';
+import processing from '../assets/images/processing.jpg';
+import delivery from '../assets/images/global delivery.avif';
+
 export default function Process() {
     const steps = [
         {
-            icon: "potted_plant",
+            image: cultivation,
             title: "Cultivation",
             desc: "Nurtured in the nutrient-rich soils of Idukki's high ranges, using 100% organic farming practices."
         },
         {
-            icon: "cut",
+            image: harvest,
             title: "Harvest",
             desc: "Handpicked at dawn by experienced farmers who select only the perfectly mature pods."
         },
         {
-            icon: "sunny",
+            image: processing,
             title: "Processing",
             desc: "Sun-dried naturally and graded by size (7mm+) to preserve volatile oils and aroma."
         },
         {
-            icon: "local_shipping",
+            image: delivery,
             title: "Global Delivery",
             desc: "Vacuum packed to seal freshness and shipped worldwide within days of processing."
         }
@@ -35,17 +40,19 @@ export default function Process() {
 
                 <div className="relative">
                     {/* Connector Line (Desktop) */}
-                    <div className="hidden lg:block absolute top-[60px] left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                    <div className="hidden lg:block absolute top-[80px] left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative">
                         {steps.map((step, index) => (
                             <div key={index} className="flex flex-col items-center text-center group cursor-default">
                                 {/* Icon Circle */}
-                                <div className="relative z-10 bg-white dark:bg-[#0c1a0e] p-2 rounded-full mb-6 transition-transform duration-500 group-hover:scale-110 border-4 border-background-light dark:border-background-dark">
-                                    <div className="size-24 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 group-hover:bg-primary group-hover:text-[#111812] transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-4xl text-primary group-hover:text-[#111812] transition-colors duration-300">
-                                            {step.icon}
-                                        </span>
+                                <div className="relative z-10 bg-white dark:bg-[#0c1a0e] p-2 rounded-full mb-6 transition-transform duration-500 group-hover:scale-110 border-4 border-background-light dark:border-background-dark shadow-lg">
+                                    <div className="size-40 rounded-full overflow-hidden border border-primary/20 flex items-center justify-center">
+                                        <img
+                                            src={step.image}
+                                            alt={step.title}
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
+                                        />
                                     </div>
                                 </div>
 

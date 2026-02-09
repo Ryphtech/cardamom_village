@@ -1,10 +1,12 @@
+import hero2 from '../assets/images/hero2.jpeg';
+
 export default function About() {
     return (
         <section className="px-4 lg:px-40 py-12 lg:py-20" id="about">
             <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
                 <div className="w-full lg:w-1/2">
-                    <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
-                        <img alt="Traditional Spice Processing" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbgwyD8srhwMf2xsUTYjd0vC0Oyrw8IWBlkF4XL19ymIa72Jn0XNzOfWedxeQTiqvDs8wO3hOt8D2uUXfDxNdbM5qx16MwVpOqxEqD6rx9eI7KZed5JkMknm8ErNE_0ZGURf-tJkwDsh6LAwZQhEW4Fz1QwNgYitWZahJ9DJpVYwNRTkx_wr7jAHIgfcP5eHeXhjsp1VzWmcOKJjjq_dZR9aqHQVt0pAxYess05JA7hHQNkK4v66LgP4Mwf4q1BASSpPqmJwz1HrpF" />
+                    <div className="rounded-2xl overflow-hidden shadow-2xl">
+                        <img alt="Traditional Spice Processing" className="w-full h-auto" src={hero2} />
                     </div>
                 </div>
                 <div className="w-full lg:w-1/2 space-y-8">
@@ -18,8 +20,8 @@ export default function About() {
                     </p>
                     <div className="grid grid-cols-2 gap-6 pt-4">
                         <div>
-                            <div className="text-3xl font-black text-primary">25+</div>
-                            <div className="text-sm font-medium text-gray-500">Partner Farms</div>
+                            <div className="text-3xl font-black text-primary">100+</div>
+                            <div className="text-sm font-medium text-gray-500">Satisfied Customers</div>
                         </div>
                         <div>
                             <div className="text-3xl font-black text-primary">100%</div>
