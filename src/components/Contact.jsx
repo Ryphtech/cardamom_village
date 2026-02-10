@@ -70,7 +70,7 @@ export default function Contact() {
                                 <input
                                     id="fullName"
                                     className="w-full rounded-lg border-gray-200 dark:border-gray-700 bg-transparent focus:ring-primary focus:border-primary"
-                                    placeholder="Enter you name"
+                                    placeholder="Enter your name"
                                     type="text"
                                     required
                                     value={formData.fullName}
